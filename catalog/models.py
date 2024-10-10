@@ -50,6 +50,11 @@ class Product(models.Model):
         null=True,
         verbose_name="дата последнего изменения(записи в БД)",
     )
+    manufactured_at = models.DateField(
+        blank=True,
+        null=True,
+        verbose_name="дата производства продукта"
+    )
 
     class Meta:
         verbose_name = "Категория"
